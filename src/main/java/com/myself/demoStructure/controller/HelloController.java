@@ -3,10 +3,10 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/hello")
 public class HelloController {
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     @ResponseBody
     public String helloWorld() {
         return "Hello, World!";
